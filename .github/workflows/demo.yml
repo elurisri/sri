@@ -16,4 +16,5 @@ jobs:
         - name: my-step1
           run: echo "hello word"
         - name: create new folder
+          if: ${{ always() }}
           run: mkdir newfolder
