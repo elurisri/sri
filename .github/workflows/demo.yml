@@ -6,6 +6,7 @@ jobs:
      steps:
         - name: my-step
           run: echo "hello word"
+          run: exit 1
 
   my-job1:
      runs-on: ubuntu-latest
