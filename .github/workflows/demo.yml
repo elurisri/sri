@@ -3,18 +3,11 @@ name: hello-world
 jobs:
   my-job:
      runs-on: ubuntu-latest
+     env:
+       name: 'india'
      steps:
         - name: my-step
           run: echo "hello word"
-        - name: failing the job
-          run: exit 1
-
-  my-job1:
-     runs-on: ubuntu-latest
-     needs: my-job
-     if: ${{ always() }}
-     steps:
-        - name: my-step1
-          run: echo "hello word"
-        - name: create new folder
-          run: mkdir newfolder
+        - name: create directory
+          if: ${{ name == 'india' }}
+          run: mkdir india
