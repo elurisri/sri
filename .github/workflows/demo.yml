@@ -13,8 +13,8 @@ jobs:
      runs-on: ubuntu-latest
      needs: my-job
      steps:
-        - name: my-step1
           if: ${{ always() }}
+        - name: my-step1
           run: echo "hello word"
         - name: create new folder
           run: mkdir newfolder
