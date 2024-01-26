@@ -6,7 +6,8 @@ jobs:
      steps:
         - name: my-step
           run: echo "hello word"
-          run: exit 1
+          run: apt-get update ubuntu
+          run: jhfahmf
 
   my-job1:
      runs-on: ubuntu-latest
