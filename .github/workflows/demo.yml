@@ -6,8 +6,6 @@ jobs:
      steps:
         - name: my-step
           run: echo "hello word"
-        - name: ubdate ubuntu
-          run: apt-get update ubuntu
         - name: failing the job
           run: jhfahmf
 
