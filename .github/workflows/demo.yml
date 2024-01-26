@@ -6,3 +6,11 @@ jobs:
      steps:
         - name: my-step
           run: echo "hello word"
+
+  my-job1:
+     runs-on: ubuntu-latest
+     steps:
+        - name: my-step1
+          run: echo "hello word"
+        - name: create new folder
+          run: mkdir newfolder
