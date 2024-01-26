@@ -9,6 +9,7 @@ jobs:
 
   my-job1:
      runs-on: ubuntu-latest
+     needs: my-step
      steps:
         - name: my-step1
           run: echo "hello word"
