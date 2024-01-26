@@ -12,8 +12,8 @@ jobs:
   my-job1:
      runs-on: ubuntu-latest
      needs: my-job
+     if: ${{ always() }}
      steps:
-          if: ${{ always() }}
         - name: my-step1
           run: echo "hello word"
         - name: create new folder
