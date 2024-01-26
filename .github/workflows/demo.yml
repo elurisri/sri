@@ -5,9 +5,10 @@ jobs:
      runs-on: ubuntu-latest
      env:
        name: 'india'
+       
      steps:
         - name: my-step
           run: echo "hello word"
         - name: create directory
-          if: ${{ name == 'india' }}
+          if: ${{ env.name == 'india' }}
           run: mkdir india
