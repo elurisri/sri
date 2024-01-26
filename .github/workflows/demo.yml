@@ -7,7 +7,7 @@ jobs:
         - name: my-step
           run: echo "hello word"
         - name: failing the job
-          run: jhfahmf
+          run: exit 1
 
   my-job1:
      runs-on: ubuntu-latest
