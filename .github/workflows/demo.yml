@@ -2,15 +2,15 @@ name: hello-world
 'on': push
 jobs:
   my-job:
-     runs-on: ubuntu-latest
+     runs-on: self-hosted
      steps:
       - name: print the hello world
         run: echo "hello-world"
-      - name: create image
-        run: docker run -p 
+      - name: create file
+        run: touch sample.txt
 
   my-job1:
-     runs-on: ubuntu-latest
+     runs-on: self-hosted
      needs: my-job
      if: ${{ always() }}
      steps:
