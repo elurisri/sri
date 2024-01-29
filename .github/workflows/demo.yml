@@ -7,7 +7,7 @@ jobs:
       - name: print the hello world
         run: echo "hello-world"
       - name: create image
-        run: docker run -d ubuntu:latest
+        run: docker run -p 
 
   my-job1:
      runs-on: ubuntu-latest
