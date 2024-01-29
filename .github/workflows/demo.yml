@@ -6,3 +6,11 @@ jobs:
      steps:
       - name: print the hello world
         run: echo "hello-world"
+
+  my-job1:
+     runs-on: ubuntu-latest
+     steps:
+      - name: print the hello world
+        run: echo "hello-world"
+      - name: create newdirectory
+        run: mkdir newdirectory
