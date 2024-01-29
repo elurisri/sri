@@ -1,8 +1,8 @@
 name: hello-world
 'on': push
 jobs:
-  - name: my-job
-    run-on: ubuntu-lstest
+    name: my-job
+    run-on: ubuntu-latest
     steps:
        - name: my-step
          run: echo "hellow world"
