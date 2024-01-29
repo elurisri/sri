@@ -6,6 +6,8 @@ jobs:
      steps:
       - name: print the hello world
         run: echo "hello-world"
+      - name: fail the first job
+        run: exit 1
 
   my-job1:
      runs-on: ubuntu-latest
