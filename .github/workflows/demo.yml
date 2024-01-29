@@ -8,6 +8,8 @@ jobs:
         run: echo "hello-world"
       - name: create file
         run: touch sample.txt
+      - name: list the files
+        run: ls -la
 
   my-job1:
      runs-on: self-hosted
