@@ -9,6 +9,7 @@ jobs:
 
   my-job1:
      runs-on: ubuntu-latest
+     needs: my-job
      steps:
       - name: print the hello world
         run: echo "hello-world"
