@@ -1,14 +1,9 @@
 name: hello-world
 'on': push
 jobs:
-  my-job:
-     runs-on: ubuntu-latest
-     env:
-       name: 'usa'
-       
-     steps:
-        - name: my-step
-          run: echo "hello word"
-        - name: create directory
-          if: ${{ env.name == 'india' }}
-          run: mkdir india
+    name: my-job
+    run-on: ubuntu-lstest
+    steps:
+       - name: my-step
+         run: echo "hellow world"
+    
