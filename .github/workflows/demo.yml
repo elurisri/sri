@@ -7,7 +7,7 @@ jobs:
       - name: print the hello world
         run: echo "hello-world"
       - name: fail the first job
-        run: exit 1
+        run: exit 0
 
   my-job1:
      runs-on: ubuntu-latest
