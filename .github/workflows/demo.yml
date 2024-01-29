@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: crate new folder
-         run: mkdir newfolder
+         run: touch newfolder/sample.txt
  
