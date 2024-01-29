@@ -7,11 +7,12 @@ jobs:
       - name: print the hello world
         run: echo "hello-world"
       - name: fail the first job
-        run: exit 0
+        run: exit 1
 
   my-job1:
      runs-on: ubuntu-latest
      needs: my-job
+     if: ${{ always() }}
      steps:
       - name: print the hello world
         run: echo "hello-world"
