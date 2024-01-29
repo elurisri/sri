@@ -6,4 +6,9 @@ jobs:
     steps:
        - name: my-step
          run: echo "hellow world"
-    
+  my-job1:
+    runs-on: ubuntu-latest
+    steps:
+       - name: crate new folder
+         run: mkdir newfolder
+ 
