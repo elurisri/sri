@@ -1,4 +1,4 @@
-FROM ubuntu 
+FROM apache 
 MAINTAINER siva@gmail.com 
 RUN apt-get update
 RUN apt-get install -y apt-transport-https
